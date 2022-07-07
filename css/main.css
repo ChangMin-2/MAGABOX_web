@@ -53,10 +53,25 @@ a {text-decoration: none;}
   padding-bottom: 20px;
   position: relative;
 }
+.header .lnb_container:hover::after{
+  opacity: 1;
+}
+.header .lnb_container::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #eee;
+  position: absolute;
+  top: 42px;
+  left: 0;
+  opacity: 0;
+  transition: all 0.2s;
+}
 .header .lnb_container .lnb_left {
 }
 .header .lnb_container .lnb_left .lnb_menu {
   display: flex;
+  position: relative;
 }
 .header .lnb_container .lnb_left .lnb_menu li{
   width: 145px;
@@ -74,6 +89,7 @@ a {text-decoration: none;}
   height: 0;
   overflow: hidden;
   transition: all 0.7s;
+  position: relative;
 }
 .header .lnb_container .lnb_left .sub_menu>li {
   width: 145px;
@@ -345,6 +361,10 @@ a {text-decoration: none;}
   border-radius: 5px;
   font-size: 14px;
   font-weight: 600;
+  transition: all 0.3s;
+}
+.movie_poster .btn_area .book_btn:hover {
+  background: linear-gradient(57deg, rgba(2,0,36,1) 0%, rgba(2,0,41,1) 0%, rgba(2,0,39,1) 0%, rgba(18,22,65,1) 0%, rgba(60,41,120,1) 100%);
 }
 
 .quick_search_box {
@@ -540,15 +560,16 @@ a {text-decoration: none;}
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  background: url(../images/main-img/benefit/opening/bg-theater-open.jpg)no-repeat center center;
+  background: url(../images/main-img/benefit/opening/bg-theater-open.jpg)no-repeat;
   cursor: pointer;
+  transition: all 0.5s;
 }
 .opening .opening02 {
-  background: url(../images/main-img/benefit/opening/specialtheater01.jpg)no-repeat center center;
+  background: url(../images/main-img/benefit/opening/specialtheater01.jpg)no-repeat;
+  background-size: cover;
 }
 .opening .opening_img:hover {
-  background: none;
-  background-color: #fff;
+  background: #fff;
 }
 .opening .opening_img:hover .opening_img_info p:nth-child(2),
 .opening .opening_img:hover .opening_img_info p:nth-child(3) {
