@@ -114,7 +114,7 @@ const topBtn = document.querySelector('.top_btn');
 
 topBtn.addEventListener('click', ()=>{
   //gsap.to(요소, 시간, 애니메이션옵션{객체데이터}})
-  gsap.to(window, 0.5, {
+  gsap.to(window, 1, {
     scrollTo: 0
   })
 })
@@ -132,7 +132,7 @@ window.addEventListener('scroll',() =>{
 })
 
 // popup
-const popUp = $('.popup');
+const popUp = $('.pop_bg');
 const popupClose = $('.close');
 
 popupClose.click(function(){
@@ -147,3 +147,12 @@ clickBtns.forEach(function(clickBtn){
     clickBtn.classList.toggle('on');
   })
 })
+
+const scrollEl = document.querySelector('.scroll_el')
+
+new ScrollMagic
+  .Scene({
+    triggerElement:scrollEl,
+    triggerHook:0.7})
+  .setClassToggle(scrollEl,'show')
+  .addTo(new ScrollMagic.Controller)

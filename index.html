@@ -15,6 +15,8 @@
   <!-- gsap cdn - 애니메이션 플러그인 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js" integrity="sha512-lZACdYsy0W98dOcn+QRNHDxFuhm62lfs8qK5+wPp7X358CN3f+ml49HpnwzTiXFzETs4++fADePDI+L2zwlm7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- scrollMagic -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- jquery -->
   <script src="./js/jquery-3.6.0.min.js"></script>
   <!-- main.css -->
@@ -302,7 +304,7 @@
   </section> <!--benefit-->
 
 
-  <section class="store">
+  <section class="store scroll_el">
     <div class="inner">
       <p class="sec_title">스토어</p>
       <div class="more"><p>스토어 더보기</p><span class="material-icons">add</span></div>
@@ -354,7 +356,7 @@
     </div> -->
 
     <div class="container">
-      <div class="product event-product">
+      <div class="product event-product  origin delay-00">
         <div class="img-area"><img src="./images/main-img/store/event.png" alt="event_product"></div>
         <div class="text-area">
           <p>코카-콜라 굿즈 패키지</p>
@@ -364,7 +366,7 @@
           </div>
         </div>
       </div>
-      <div class="product">
+      <div class="product origin delay-01">
         <div class="img-area"><img src="./images/main-img/store/single.png" alt="product"></div>
         <div class="text-area">
           <p>싱글패키지</p>
@@ -377,7 +379,7 @@
           </div>
         </div>
       </div>
-      <div class="product">
+      <div class="product origin delay-02">
         <div class="img-area"><img src="./images/main-img/store/love.png" alt="product"></div>
         <div class="text-area">
           <p>러브 콤보 패키지</p>
@@ -390,7 +392,7 @@
           </div>
         </div>
       </div>
-      <div class="product">
+      <div class="product origin delay-03">
         <div class="img-area"><img src="./images/main-img/store/family.png" alt="product"></div>
         <div class="text-area">
           <p>패밀리패키지</p>
@@ -547,32 +549,34 @@
 
   <div class="top_btn"><span class="material-icons">vertical_align_top</span></div>
   
-  <div class="popup">
-    <div class="content">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./images/main-img/popup/pop-up01.jpg" alt="pop-up01">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/main-img/popup/pop-up02.jpg" alt="pop-up02">
-          </div>
-          <div class="swiper-slide">
-            <img src="./images/main-img/popup/pop-up03.jpg" alt="pop-up03">
+  <div class="pop_bg">
+    <div class="popup">
+      <div class="content">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/main-img/popup/pop-up01.jpg" alt="pop-up01">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/main-img/popup/pop-up02.jpg" alt="pop-up02">
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/main-img/popup/pop-up03.jpg" alt="pop-up03">
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="pause">
-      <span class="material-icons">pause</span>
-    </div>
-    <div class="start">
-      <span class="material-icons">play_arrow</span>
-    </div>
-    <div class="swiper-pagination"></div>
-    <div class="today_close"><input type="checkbox" id="chkBtn"><label for="chkBtn">하루동안 보지 않기</label></div>
-    <div class="close">
-      <img src="./images/main-img/popup/ico-layer-close-g.png" alt="">
+      <div class="pause">
+        <span class="material-icons">pause</span>
+      </div>
+      <div class="start">
+        <span class="material-icons">play_arrow</span>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="today_close"><input type="checkbox" id="chkBtn"><label for="chkBtn">하루동안 보지 않기</label></div>
+      <div class="close">
+        <img src="./images/main-img/popup/ico-layer-close-g.png" alt="">
+      </div>
     </div>
   </div>
 </body>
