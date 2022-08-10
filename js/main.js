@@ -89,7 +89,6 @@ const popSwiper = new Swiper('.popup .swiper', {
   },
 });
 popPause.addEventListener('click',function(){
-  console.log('click');
   popSwiper.autoplay.stop();
   popPause.style.display = "none";
   popStart.style.display ='block';
